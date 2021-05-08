@@ -1,0 +1,9 @@
+{
+  "files": ["./src/app.ts"],
+  "compilerOptions": {
+    "target": "es5",
+    "outDir": "dist",
+    "strict": true,
+    "typeRoots": ["./src"]
+  }
+}

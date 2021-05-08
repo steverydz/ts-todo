@@ -1,0 +1,87 @@
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+  height: 100%;
+  overflow-x: scroll;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: #f7f7f7;
+  color: #111;
+  font-family: sans-serif;
+  height: 100%;
+  line-height: 1.5;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+input[type="text"] {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  font: inherit;
+  margin-bottom: 0.5rem;
+  padding: 0.5rem;
+  width: 100%;
+}
+
+button {
+  background-color: #eee;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  cursor: pointer;
+  font: inherit;
+  padding: 0.5rem;
+}
+
+button:hover {
+  background-color: #ddd;
+}
+
+button:active {
+  background-color: #bbb;
+}
+
+button[disabled] {
+  cursor: not-allowed;
+}
+
+button[disabled]:hover,
+button[disabled]:active {
+  background-color: #eee;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 35em;
+  width: 90%;
+}
+
+.task-form {
+  margin-bottom: 1.5rem;
+}
+
+.task {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  margin-bottom: 1rem;
+  padding: 1rem;
+}
+
+.task__title {
+  margin-bottom: 1rem;
+}
+
+.task--completed .task__title {
+  text-decoration: line-through;
+}

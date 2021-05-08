@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TypeScript Todo</title>
+  <link rel="stylesheet" href="/main.css">
+  <script src="/app.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <h1>TypeScript Todo</h1>
+
+    <form class="task-form" id="new-task-form">
+      <label for="add-task-input">New task</label>
+      <input type="text" name="add-task-input" id="add-task-input" placeholder="e.g. Get bananas">
+      <button type="submit" id="add-task-button" disabled>&plus;&nbsp;Add task</button>
+    </form>
+
+    <div class="task-list" id="task-list"></div>
+  </div>
+
+  <template id="task-template">
+    <div class="task">
+      <div class="task__title"></div>
+      <button type="button" class="task__complete-button">&check;&nbsp;Complete</button>
+      <button type="button" class="task__remove-button">&times;&nbsp;Remove</button>
+    </div>
+  </template>
+</body>
+</html>
